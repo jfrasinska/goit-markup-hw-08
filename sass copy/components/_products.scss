@@ -1,0 +1,37 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    vertical-align: middle;
+  }
+  &__box {
+    position: relative;
+  }
+  &__pic {
+    z-index: 1;
+    display: block;
+  }
+  &__desc {
+    position: absolute;
+    color: $mainDesignWhite;
+    background-color: $photoOverlayGrey;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 2;
+    padding: 27px 0;
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,121 @@
+.order {
+  margin-bottom: 30px;
+
+  &__label {
+    color: $contactFormTekstColor;
+    fill: $primaryTextColor;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    position: relative;
+  }
+
+  &__input {
+    color: $primaryTextColor;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    transition-property: border;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      border-color: $mainDesignBlue;
+    }
+
+    &:hover {
+      border-color: $mainDesignBlue;
+      fill: $mainDesignBlue;
+    }
+  }
+  &__icon {
+    position: absolute;
+    outline: none;
+    left: 12px;
+    top: 31px;
+    fill: $primaryTextColor;
+    transition-property: fill;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:focus + &__icon {
+    fill: $mainDesignBlue;
+  }
+  &__input:hover + &__icon {
+    border-color: $mainDesignBlue;
+    fill: $mainDesignBlue;
+  }
+
+  &__comment {
+    color: $primaryTextColor;
+    position: relative;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border-color: $mainDesignBlue;
+      fill: $mainDesignBlue;
+      outline: none;
+    }
+  }
+
+  &__checkbox-button {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid $primaryTextColor;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  &__checkbox-button:checked + &__checkbox-icon {
+    opacity: 1;
+  }
+
+  &__checkbox-frame {
+    position: relative;
+  }
+  &__checkbox-icon {
+    position: absolute;
+    fill: $mainDesignBlue;
+    left: 0px;
+    top: -2px;
+    opacity: 0;
+    transition-property: opacity;
+  }
+  &__terms-text {
+    color: $contactFormTekstColor;
+    font-size: 14px;
+    line-height: 146%;
+    letter-spacing: 0.03em;
+  }
+
+  &__terms-link {
+    color: $mainDesignBlue;
+  }
+
+  &__sending-button {
+    background-color: $mainDesignBlue;
+    color: $mainDesignWhite;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}

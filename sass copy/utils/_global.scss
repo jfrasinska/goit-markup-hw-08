@@ -1,0 +1,36 @@
+p,
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primaryTextColor;
+}
+
+.list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+
+.secondary-header {
+  text-align: center;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
