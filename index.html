@@ -30,6 +30,7 @@
                 Web<span class="logo__mark logo__mark--black">Studio</span>
               </h2></a
             >
+
             <ul class="main-nav__bar list">
               <li>
                 <a
@@ -44,6 +45,25 @@
               <li><a class="main-nav__link" href="#">Kontakt</a></li>
             </ul>
           </div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
           <div class="contact-bar">
             <a class="contact-bar__item" href="mailto:info@devstudio.com"
               ><svg width="16px" height="12px">
@@ -59,25 +79,6 @@
             >
           </div>
         </nav>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
       </section>
     </header>
     <!--Main part-->
@@ -565,11 +566,16 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li><a href="" class="mobile-menu__link">Agencja</a></li>
+        <li><a href="" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="" class="mobile-menu__link">Kontakt</a></li>
       </ul>
+      <div class="mobile-menu__contact">
+        <a class="mobile-menu__item" href="tel:+48111111111"> +48111111111</a>
+        <a class="mobile-menu__item" href="mailto:info@devstudio.com">
+          info@devstudio.com</a
+        >
+      </div>
     </div>
 
     <script
