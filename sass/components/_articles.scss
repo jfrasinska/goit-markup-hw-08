@@ -1,5 +1,40 @@
 .article {
   display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  max-width: 450px;
+  gap: 30px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    background-color: $contrastElementsColor;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+  }
+  &__name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  &__overview {
+    color: $secondaryTextColor;
+    height: 50px;
+    overflow: hidden;
+    line-height: 146%;
+    letter-spacing: 0.03em;
+  }
+}
+
+/*
+.article {
+  display: flex;
   gap: 30px;
 
   &__icon {
@@ -22,3 +57,4 @@
     letter-spacing: 0.03em;
   }
 }
+*/
