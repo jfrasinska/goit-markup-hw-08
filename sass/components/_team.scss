@@ -5,13 +5,65 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
   }
   &__items {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
   }
+  &__photo-box {
+    background-color: $mainDesignWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__position {
+    color: $secondaryTextColor;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+  &__social-links {
+    fill: $iconColor;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  &__social-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*
+.team {
+  background-color: $contrastElementsColor;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
   &__photo-box {
     background-color: $mainDesignWhite;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -60,3 +112,4 @@
     }
   }
 }
+*/
