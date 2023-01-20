@@ -4,6 +4,125 @@
 
   &__items {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+  }
+  &__address-info {
+    color: $mainDesignWhite;
+    line-height: 171%;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+  }
+  &__contact-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    gap: 9px;
+  }
+
+  &__contact-item {
+    font-style: normal;
+    text-decoration: none;
+    color: $secondaryTextColor;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    fill: currentColor;
+  }
+
+  &__join-box {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+  }
+  &__desc {
+    color: $mainDesignWhite;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__social-icon {
+    fill: $mainDesignWhite;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    min-width: calc(100vw - 30px);
+    max-width: 450px;
+    height: 50px;
+    padding-left: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainDesignBlue;
+    color: $mainDesignWhite;
+    fill: $mainDesignWhite;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    gap: 24px;
+  }
+}
+
+/*
+.footer {
+  background-color: $secondaryBackgroundColor;
+  padding: 60px 0px;
+
+  &__items {
+    display: flex;
     gap: 50px;
     align-items: flex-start;
   }
@@ -120,3 +239,4 @@
     gap: 24px;
   }
 }
+*/
