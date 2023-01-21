@@ -14,7 +14,7 @@
   left: 50%;
   z-index: 4;
   width: 100%;
-  max-width: 528px;
+  max-width: 450px;
   height: 581px;
   background-color: $mainDesignWhite;
   padding: 40px;
@@ -30,9 +30,10 @@
 
   &__title {
     color: $mainDesignBlack;
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 128%;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
   }
@@ -58,5 +59,16 @@
     top: 8px;
     right: 8px;
     cursor: pointer;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    & {
+      line-height: 100%;
+    }
   }
 }

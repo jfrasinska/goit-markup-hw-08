@@ -20,6 +20,11 @@
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 24px;
   }
+  &__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -66,66 +71,9 @@
 /* Desktop */
 
 @media screen and (min-width: 1200px) {
-}
-
-/*
-.team {
-  background-color: $contrastElementsColor;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-  }
-
-  &__photo-box {
-
-    background-color: $mainDesignWhite;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  &__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  &__position {
-    color: $secondaryTextColor;
-    font-size: 16px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-  }
-  &__social-links {
-    fill: $iconColor;
-    margin-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-    display: flex;
-    gap: 10px;
-  }
-  &__social-icon {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus,
-    &:hover {
-      border-radius: 50%;
-      background-color: $mainDesignBlue;
-      fill: $mainDesignWhite;
+  .team {
+    &__photo-box {
+      width: 270px;
     }
   }
 }
-*/
