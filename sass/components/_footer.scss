@@ -143,16 +143,17 @@
   .footer {
     &__items {
       flex-direction: row;
-      gap: 60px;
+      gap: 50px;
       align-items: baseline;
     }
     &__info {
       align-items: flex-start;
     }
-    &__join-box {
-      display: flex;
-      justify-content: flex-start;
+
+    &__desc {
+      margin-left: 0;
     }
+
     &__social-links {
       display: flex;
       gap: 10px;
