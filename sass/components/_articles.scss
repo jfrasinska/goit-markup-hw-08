@@ -1,7 +1,6 @@
 .article {
   display: flex;
-  flex-direction: column;
-  max-width: 450px;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__icon {
@@ -28,6 +27,35 @@
     overflow: hidden;
     line-height: 146%;
     letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .article {
+    display: flex;
+    flex-basis: calc((100vw - 60px) / 2);
+    flex-wrap: wrap;
+
+    &__icon {
+      background-color: $contrastElementsColor;
+      padding-top: 25px 142px;
+    }
+    &__name {
+      text-align: left;
+    }
+    &__overview {
+      height: 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article {
+    flex-wrap: nowrap;
+
+    &__icon {
+      background-color: $contrastElementsColor;
+      padding: 25px 100px;
+    }
   }
 }
 

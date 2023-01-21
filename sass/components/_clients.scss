@@ -29,6 +29,22 @@
   }
 }
 
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__icon {
+    width: 226px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .clients__icon {
+    width: 170px;
+  }
+}
+
 /*
 .clients {
   display: flex;
