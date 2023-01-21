@@ -1,11 +1,11 @@
 .article {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   &__icon {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: $contrastElementsColor;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -31,13 +31,12 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .article {
-    display: flex;
-    flex-basis: calc((100vw - 60px) / 2);
-    flex-wrap: wrap;
-
+    &__item {
+      max-width: 364px;
+    }
     &__icon {
       background-color: $contrastElementsColor;
-      padding-top: 25px 142px;
+      padding-top: 25px;
     }
     &__name {
       text-align: left;
@@ -56,32 +55,8 @@
       background-color: $contrastElementsColor;
       padding: 25px 100px;
     }
+    &__name {
+      text-align: left;
+    }
   }
 }
-
-/*
-.article {
-  display: flex;
-  gap: 30px;
-
-  &__icon {
-    background-color: $contrastElementsColor;
-    padding: 25px 100px;
-    border-radius: 4px;
-  }
-  &__name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
-  &__overview {
-    color: $secondaryTextColor;
-    line-height: 146%;
-    letter-spacing: 0.03em;
-  }
-}
-*/
