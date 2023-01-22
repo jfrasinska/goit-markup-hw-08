@@ -43,6 +43,9 @@
 
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -97,6 +100,7 @@
   }
   &__social {
     margin-top: 64px;
+    bottom: 48px;
   }
   &__social-link {
     text-decoration: none;

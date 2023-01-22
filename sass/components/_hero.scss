@@ -67,6 +67,13 @@
       url("../images/hero_img768.jpeg");
   }
 }
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero_768@x2.jpeg");
+  }
+}
 
 /* Desktop */
 
@@ -89,5 +96,12 @@
       max-width: 696px;
       font-size: 44px;
     }
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-width: 1200px) and (min-resolution: 192dpi),
+  (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero_1600@x2.jpeg");
   }
 }
